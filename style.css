@@ -1,0 +1,45 @@
+/*Overall display for header, by setting it to space between I set the 2 flex containers on 2 sides of the page. I just needed to adjust their paddingso they wont stick to the sides*/
+header{
+  display: flex;
+  justify-content: space-between;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid black;
+  position: fixed;
+
+}
+/*this enabled me to have the logo and the nav on the same line, remember to set the width! */
+.logo{
+  display: inline-flex;
+  width: 200px;
+  align-items: center;
+  padding-left: 30px;
+}
+/*Logo text*/
+.logo span{
+  color: MediumAquamarine;
+  align-self: center;
+  padding-left: 10px;
+}
+/*got the logo in the right position and not too close to edge*/
+.nav{
+  display: inline-flex;
+  width: 250px;
+  padding-right: 40px;
+  justify-content: center;
+}
+/*text doesnt look squishy*/
+.nav span{
+  display: inline-block;
+  align-self: center;
+  padding: 20px 10px;
+
+}
+/*nav links*/
+.nav a{
+  color: black;
+  text-decoration: underline;
+}
