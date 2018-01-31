@@ -11,6 +11,7 @@ header{
   position: fixed;
   background-color: white;
   z-index: 1;
+  margin-bottom: 10px;
 }
 /*this enabled me to have the logo and the nav on the same line, remember to set the width! */
 .logo{
@@ -53,22 +54,86 @@ header{
   position: relative;
   top: 90px;
   border: 1px solid black;
+  margin-right: 10px;
+
 }
 /*middle column*/
 .column.medium{
   display: flex;
+  flex-direction: column;
   width: 300px;
   position: relative;
   top: 90px;
+  margin-left: 10px;
+
 }
+/*small column*/
+.column.small{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  width: 240px;
+  position: relative;
+  top: 90px;
+
+}
+
 /*borders for development*/
-.steak, .orca, .steakarticle, .earth, .burger, .camera{
+.steak, .orca, .steakarticle, .earth, .burger, .camera, .fbi, .cats, .brooklyn,.cookie, .column.large, .column.middle, .column.small, .bites{
   border: 1px solid black;
 }
-/**/
+/*this code enables the columns to appear next to each other*/
 .content{
   display: inline-flex;
+
+  background-color: white;
 }
-.fbi{
-  border: 1px solid black;
+/*background image for left coolumn*/
+.steak span{
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
+
+}
+/*the flex property enabled the image to resize correctly and fit the whole image*/
+.image-content{
+  height: 300px;
+  display: flex;
+}
+.image-content span{
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+}
+.earth{
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png");
+  height: 300px;
+  text-align: center;
+}
+/*styling for text on the images*/
+.earth span, .camera p, .cats span{
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+
+}
+/*aligning text on image*/
+.camera{
+  text-align: center;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png");
+  height: 300px;
+  display: flex;
+}
+.steakarticle p, .orca p, .burger p, .fbi p, .brooklyn p, .bites p{
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+/*cats immage*/
+.cats span{
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png");
+  height: 300px;
+}
+.cats{
+  display: flex
 }
